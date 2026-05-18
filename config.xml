@@ -1,0 +1,30 @@
+<native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+  <hostname>KerimRouter</hostname>
+  <interface>
+    <GigabitEthernet>
+      <name>1</name>
+      <ip>
+        <address>
+          <primary>
+            <address>192.168.50.1</address>
+            <mask>255.255.255.0</mask>
+          </primary>
+        </address>
+      </ip>
+      <no-switchport/>
+    </GigabitEthernet>
+  </interface>
+  <router>
+    <ospf xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ospf">
+      <ospf>
+        <process-id>1</process-id>
+        <router-id>1.1.1.1</router-id>
+        <network>
+          <ip>192.168.50.0</ip>
+          <wildcard>0.0.0.255</wildcard>
+          <area>0</area>
+        </network>
+      </ospf>
+    </ospf>
+  </router>
+</native>
