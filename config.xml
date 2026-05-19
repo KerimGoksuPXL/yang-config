@@ -2,7 +2,7 @@
   <hostname>KerimRouter</hostname>
   <interface>
     <GigabitEthernet>
-      <name>1</name>
+      <name>0/0/0</name>
       <ip>
         <address>
           <primary>
